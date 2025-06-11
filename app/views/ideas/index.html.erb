@@ -27,13 +27,17 @@
       <div class="mt-4 text-right flex justify-between ">
       <%= link_to 'Edit', edit_idea_path(idea), class: 'bg-blue-500 rounded py-3 px-5 text-white hover:bg-red-800 ' %>
         <%= button_to 'Delete', idea_path(idea), method: :delete, data: { turbo_confirm: "Are you sure?" }, class: 'bg-red-500 rounded p-3 text-white hover:bg-red-800' %>
-
-        
-
-
       </div>
     </div>
-  </div>
+    </div>
 <% end %>
-
+ 
 </div>
+  <div class="flex justify-center mt-6 space-x-2 text-blue-600 ">
+  <%== pagy_nav(@pagy) if @pagy.pages > 1 %>
+</div>
+ 
+
+
+
+    

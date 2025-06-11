@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
    root 'ideas#index'
-   resources:ideas
+   resources :ideas
    get 'about'=>'static_pages#about'
    get 'random'=>'static_pages#random'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
