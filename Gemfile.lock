@@ -331,7 +331,7 @@ DEPENDENCIES
   jbuilder
   jsbundling-rails
   mysql2 (~> 0.5)
-  pagy (~> 9.3)
+  pagy (~> 9.3, >= 9.3.4)
   puma (>= 5.0)
   rails (~> 7.2.2, >= 7.2.2.1)
   rubocop-rails-omakase
